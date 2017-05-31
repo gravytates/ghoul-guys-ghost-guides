@@ -4,11 +4,20 @@
   </div>
 </div>
 <div class= "container">
-    {{outlet}}
-  <hr>
-  <footer>
-    {{#link-to 'index'}}Home{{/link-to}} -
-    {{#link-to 'contact'}}Contact Us{{/link-to}} -
-    {{#link-to 'about'}}About US{{/link-to}}
-  </footer>
+  <div class="row">
+    <div class="col-md-2" id="sidebar">
+
+    </div>
+    <div class="col-md-10" id="main">
+      {{outlet}}
+    </div>
+  </div>
+  <div class="row">
+    <footer>
+      <hr>
+      {{#link-to 'index'}}Home{{/link-to}} -
+      {{#link-to 'contact'}}Contact Us{{/link-to}} -
+      {{#link-to 'about'}}About US{{/link-to}}
+    </footer>
+  </div>
 </div>
