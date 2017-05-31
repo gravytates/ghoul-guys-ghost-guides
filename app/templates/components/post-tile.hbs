@@ -2,3 +2,4 @@
 <h4>{{post.author}}, {{post.date}}</h4>
 <p>{{post.body}}</p>
 {{update-post post=post updatePost="updatePost"}}
+<button {{action 'deletePost' post}}>Delete Ghost</button>
