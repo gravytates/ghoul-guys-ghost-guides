@@ -1,8 +1,8 @@
-
 {{new-post savePost="savePost"}}
-
-{{#each model as |post|}}
+<div id="posts">
+  {{#each model as |post|}}
   <div class="well">
     {{post-tile post=post updatePost='updatePost' destroyPost='destroyPost'}}
   </div>
-{{/each}}
+  {{/each}}
+</div>
