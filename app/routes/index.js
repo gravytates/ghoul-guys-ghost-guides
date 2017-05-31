@@ -7,9 +7,12 @@ export default Ember.Route.extend({
 
   actions: {
     savePost(params) {
-      debugger;
       var newPost = this.store.createRecord('post', params);
       newPost.save();
+      this.transitionTo('index');
+    },
+    updatePost(post, params) {
+      post.save();
       this.transitionTo('index');
     }
   }
