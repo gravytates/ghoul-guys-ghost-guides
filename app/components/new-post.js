@@ -14,6 +14,7 @@ export default Ember.Component.extend({
         author: this.get('author') ? this.get('author') : "",
         date: this.get('date') ? this.get('date') : "",
         body: this.get('body') ? this.get('body') : "",
+        img: this.get('img') ? this.get('img') : "",
       };
       this.set('addNewPost', false);
       this.set('hidePosts', false);

@@ -1,5 +1,6 @@
 <h1>{{post.title}}</h1>
 <h4>{{post.author}}, {{post.date}}</h4>
 <p>{{post.body}}</p>
+<img class="ghost-pic" src={{post.img}} alt="ghoul pic"/>
 {{update-post post=post updatePost="updatePost"}}
 <button class="btn btn-danger" {{action 'deletePost' post}}>Delete Ghost</button>

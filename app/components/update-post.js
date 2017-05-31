@@ -12,6 +12,7 @@ export default Ember.Component.extend({
         author: this.get('author'),
         date: this.get('date'),
         body: this.get('body'),
+        img: this.get('img'),
       };
       this.set('updatePostForm', false);
       this.sendAction('updatePost', post, params);

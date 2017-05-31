@@ -17,6 +17,10 @@
         <label for="body">Body</label>
         {{textarea class='form-control' rows=7 id="body" value=post.body}}
       </div>
+      <div class='form-group'>
+        <label for="img">Photo Evidence</label>
+        {{input class='form-control' value=post.img id="img"}}
+      </div>
       <button class='btn btn-default' {{action "updatePost" post}}>Update</button>
     </div>
   </form>
