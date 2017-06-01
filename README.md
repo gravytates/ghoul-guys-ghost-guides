@@ -1,7 +1,6 @@
-# Ghost-blog
-
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+# Ghost Guy's Ghoul Guide
+An ember and firebase backed blog to keep track of spooky stories. Write and view your blogs. Each blog has its own comment section with authors.
+Developed by Grady Shelton and Kai deRochemont.
 
 ## Prerequisites
 
@@ -15,7 +14,7 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone https://github.com/gravytates/ghoul-guys-ghost-guides.git` this repository
 * `cd ghost-blog`
 * `npm install`
 * `bower install`
@@ -41,7 +40,7 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Deploying
 
-Specify what it takes to deploy your app.
+* Recommended to create your own [firebase](https://console.firebase.google.com/) application to host these databases.
 
 ## Further Reading / Useful Links
 
@@ -51,3 +50,4 @@ Specify what it takes to deploy your app.
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
 
+## MIT open source license Copyright (c) 2017 Grady Shelton and Kai deRochemont
