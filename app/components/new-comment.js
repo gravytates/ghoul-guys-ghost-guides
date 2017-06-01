@@ -3,7 +3,7 @@ import Ember from 'ember';
 export default Ember.Component.extend({
   addNewComment: false,
   actions: {
-    reviewFormShow() {
+    commentFormShow() {
       this.set('addNewComment', true);
     },
     saveComment() {

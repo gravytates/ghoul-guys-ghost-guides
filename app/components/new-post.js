@@ -2,11 +2,9 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   addNewPost: false,
-  hidePosts: false,
   actions: {
     postFormShow() {
       this.set('addNewPost', true);
-      this.set('hidePosts', true);
     },
     savePost() {
       var params = {
@@ -17,7 +15,6 @@ export default Ember.Component.extend({
         img: this.get('img') ? this.get('img') : "",
       };
       this.set('addNewPost', false);
-      this.set('hidePosts', false);
       this.sendAction('savePost', params);
     }
   }

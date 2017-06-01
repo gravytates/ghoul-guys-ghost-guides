@@ -21,9 +21,9 @@
         <label for="img">Photo Evidence</label>
         {{input class='form-control' value=post.img id="img"}}
       </div>
-      <button class='btn btn-default' {{action "updatePost" post}}>Update</button>
+      <button class='btn btn-primary' {{action "updatePost" post}}>Update</button>
     </div>
   </form>
 {{else}}
- <button class='btn btn-default' id="post-button" {{action 'updatePostForm'}}>Edit Post</button>
+ <button class='btn btn-primary' id="post-button" {{action 'updatePostForm'}}>Edit Post</button>
 {{/if}}

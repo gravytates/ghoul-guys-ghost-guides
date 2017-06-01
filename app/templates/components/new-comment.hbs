@@ -1,1 +1,15 @@
-{{yield}}
+{{#if addNewComment}}
+  <form>
+    <div class='form-group'>
+      <label for="author">Author</label>
+      {{input class='form-control' value=author id="author"}}
+    </div>
+    <div class='form-group'>
+      <label for="body">Comment</label>
+      {{textarea rows=5 class='form-control' value=comment id="comment"}}
+    </div>
+    <button class='btn btn-default' {{action "saveComment"}}>Save Comment</button>
+  </form>
+{{else}}
+ <button class='btn btn-default' id="comment-button" {{action 'commentFormShow'}}>New Comment</button>
+{{/if}}

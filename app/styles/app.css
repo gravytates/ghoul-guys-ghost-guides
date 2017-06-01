@@ -18,3 +18,7 @@ footer {
   display: block;
   width: 100px;
 }
+
+.btn {
+  margin: 10px;
+}
