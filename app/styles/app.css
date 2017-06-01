@@ -20,5 +20,16 @@ footer {
 }
 
 .btn {
-  margin: 10px;
+  margin: 5px;
+}
+
+.delete-post {
+}
+
+.inline {
+  display: inline;
+}
+
+.date {
+  margin-left: 10px;
 }

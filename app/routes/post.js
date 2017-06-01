@@ -10,7 +10,12 @@ export default Ember.Route.extend({
       this.transitionTo('index');
     },
     destroyPost(post) {
-      post.destroyRecord();
+      var commentDeletions = post.get('comments').map(function(comment){
+        return comment.destroyRecord();
+      });
+      Ember.RSVP.all(commentDeletions).then(function(){
+        return post.destroyRecord();
+      });
       this.transitionTo('index');
     },
     saveComment(params) {

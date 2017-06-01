@@ -1,9 +1,9 @@
+<button class='btn btn-danger delete-post' {{action 'delete' post}}>Delete Post</button>
 <h1>{{post.title}}</h1>
 <h5>{{post.author}}</h5>
 <h5>{{post.date}}</h5>
 <p>{{post.body}}</p>
 <img src={{post.img}} class="ghost-pic" alt="spooky">
-<button class='btn btn-danger' {{action 'delete' post}}>Delete Post</button>
 
 <h3>Comments</h3>
 {{#each post.comments as |comment|}}
