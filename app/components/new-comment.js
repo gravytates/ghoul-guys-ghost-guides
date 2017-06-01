@@ -7,10 +7,14 @@ export default Ember.Component.extend({
       this.set('addNewComment', true);
     },
     saveComment() {
+      var full_date = new Date($.now());
+      var dayDate = (full_date.getMonth() + 1) + "/" + full_date.getDate() + "/" + full_date.getFullYear();
+      console.log(dayDate);
       var params = {
          author: this.get('author'),
-         date: this.get('date'),
-         body: this.get('bodu')
+         date: dayDate,
+         body: this.get('body'),
+         post: this.get('post')
       };
       this.set('addNewComment', false);
       this.sendAction('saveComment', params);

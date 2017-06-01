@@ -1,6 +1,6 @@
 {{new-post savePost="savePost"}}
 <div id="posts">
-  {{#each model as |post|}}
+  {{#each model.posts as |post|}}
   <div class="well">
     {{post-tile post=post}}
   </div>
