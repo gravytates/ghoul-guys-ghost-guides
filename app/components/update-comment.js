@@ -13,10 +13,10 @@ export default Ember.Component.extend({
         author: this.get('author'),
         date: dayDate,
         body: this.get('body'),
-        post: this.get('post')
+        post: this.get('post'),
       };
       this.set('updateCommentForm', false);
-      this.sendAction('updateComment', params);
+      this.sendAction('updateComment', comment, params);
     }
   }
 });

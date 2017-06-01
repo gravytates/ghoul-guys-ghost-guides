@@ -19,7 +19,7 @@ footer {
   width: 100px;
 }
 
-.btn {
+.btn, .btn-sm {
   margin: 5px;
 }
 

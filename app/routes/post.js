@@ -32,6 +32,8 @@ export default Ember.Route.extend({
       this.transitionTo('post');
     },
     updateComment(comment, params) {
+      // console.log(comment, params);
+
       comment.save();
       this.transitionTo('post');
     }
