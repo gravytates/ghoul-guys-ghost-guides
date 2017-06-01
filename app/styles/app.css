@@ -1,7 +1,29 @@
+.jumbotron {
+  height: 150px;
+  margin: 0;
+  background-image: url("/assets/images/ghost-bg.png");
+}
+
+.jumbotron h1 {
+  margin: 0 0 40px 0;
+  padding: 0 20px;
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.8);;
+}
+
 .header {
   text-align: center;
   /*margin-top: 100px;*/
   /*padding: 50px 0;*/
+}
+
+.header a {
+  font-size: 20px;
+  margin: 0 25px;
+}
+
+#nav {
+  padding: 20px 0;
 }
 
 #post-button {
@@ -12,18 +34,17 @@
   display: block;
   margin: 0 auto;
   width: 70%;
+  border-radius: 25px;
 }
 
 .ghost-thumb {
   display: block;
   width: 100px;
+  border-radius: 15px;
 }
 
 .btn, .btn-sm {
   margin: 5px;
-}
-
-.delete-post {
 }
 
 .inline {
@@ -32,4 +53,14 @@
 
 .date {
   margin-left: 10px;
+}
+
+.contact {
+  text-align: center;
+}
+
+.contact-pic {
+  display: block;
+  margin: 0 auto;
+  border-radius: 25px;
 }
