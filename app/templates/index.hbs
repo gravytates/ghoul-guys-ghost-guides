@@ -2,8 +2,7 @@
 <div id="posts">
   {{#each model as |post|}}
   <div class="well">
-    {{post-tile post=post updatePost='updatePost' destroyPost='destroyPost'}}
-    {{new-comment saveComment="saveComment" post=post}}
+    {{post-tile post=post}}
   </div>
   {{/each}}
 </div>
