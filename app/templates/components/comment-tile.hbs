@@ -1,5 +1,6 @@
 <div class="well">
   <h3 class="inline">{{comment.author}}</h3><h5 class="inline date"> {{comment.date}}</h5>
   <p>{{comment.body}}</p>
+  {{update-comment comment=comment updateComment='updateComment'}}
   <button class='btn-sm btn-danger' {{action 'delete' comment}}>delete comment</button>
 </div>

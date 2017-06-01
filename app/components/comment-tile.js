@@ -6,6 +6,9 @@ export default Ember.Component.extend({
       if (confirm('perform ritual to cleanse this space?')) {
         this.sendAction('destroyComment', comment);
       }
+    },
+    updateComment(comment, params) {
+      this.sendAction('updateComment', comment, params);
     }
   }
 });
